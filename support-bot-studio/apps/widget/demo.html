@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Bot Studio - Demo</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #1a1a1a;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #01696f 0%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #64748b;
+            line-height: 1.6;
+        }
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: #e0f2fe;
+            color: #0369a1;
+            border-radius: 99px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">Demo Page</span>
+        <h1>Support Bot Studio</h1>
+        <p>This is a demonstration of the embedded support widget. Look for the chat icon in the bottom right corner of your screen.</p>
+        <p>Make sure the backend server is running on port 8787 for the chat to work!</p>
+    </div>
+
+    <!-- Embed Script -->
+    <script 
+        src="embed.js" 
+        data-bot-id="demo-bot-123" 
+        data-api-base="http://localhost:8787"
+        data-provider="openai"
+        data-title="Acme Support"
+        data-color="#01696f"
+        defer
+    ></script>
+</body>
+</html>
