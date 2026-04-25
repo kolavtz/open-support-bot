@@ -7,6 +7,7 @@ import configRouter from "./routes/config.js";
 import healthRouter from "./routes/health.js";
 import { apiKeyAuth } from "./middleware/api-key-auth.js";
 
+dotenv.config({ path: ".env.local" });
 dotenv.config();
 
 const app = express();

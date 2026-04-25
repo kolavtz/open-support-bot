@@ -14,7 +14,8 @@ A modular, multi-provider support bot system.
 
 1. Navigate to `apps/server`.
 2. Install dependencies: `npm install`.
-3. Create a `.env` file from `.env.example`.
+3. Create a `.env.local` file (or `.env`) from `.env.example`. 
+   - Note: `.env.local` is prioritized and is ignored by git to prevent credential leaks.
 4. Add your API keys (OpenAI, OpenRouter, or Anthropic) OR configure a local model (LM Studio/Ollama).
    - For local models, set `LOCAL_MODEL_BASE_URL` (e.g., `http://localhost:11434/v1` for Ollama).
 5. Start the server: `npm run dev`.
